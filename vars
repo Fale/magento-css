@@ -1,4 +1,12 @@
-_BACKGROUND_ : Background color
-_A_ : Colors of all urls
-_BORDER_: Borders
-_TEXT_: Text colour
+Sizes: (mesure and unit)
+_W-PAGE_: Site width (default: 1000px)
+_W-RIGHT_: Width of right column
+_W-LEFT_: Width of left column
+_W-MAIN_: Width of main column
+
+
+Colours:
+_BACKGROUND_ : Background color (default #fff)
+_A_ : Colors of all urls 
+_BORDER_: Borders (defaulf #ddd)
+_TEXT_: Text colour (default #000)

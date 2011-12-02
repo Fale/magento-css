@@ -64,7 +64,7 @@ ul,ol         { list-style:none; }
 
 /* Layout ================================================================================ */
 .wrapper {}
-.page { width:1000px; margin:0 auto; padding:10px 0; text-align:left; }
+.page { width:_W-PAGE_; margin:0 auto; padding:10px 0; text-align:left; }
 .page-print { background:#FFFFFF; padding:20px; text-align:left; }
 .page-empty { background:_BACKGROUND_; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
@@ -72,9 +72,9 @@ ul,ol         { list-style:none; }
 .main { margin:10px 0; }
 
 /* Base Columns */
-.col-left { float:left; width:230px; border:1px solid _BORDER_; padding:5px 5px 0; }
-.col-main { float:left; width:736px; border:1px solid _BORDER_; padding:5px; }
-.col-right { float:right; width:230px; border:1px solid _BORDER_; padding:5px 5px 0; }
+.col-left { float:left; width:_W-LEFT_; border:1px solid _BORDER_; padding:5px 5px 0; }
+.col-main { float:left; width:_W-MAIN_; border:1px solid _BORDER_; padding:5px; }
+.col-right { float:right; width:_W-RIGHT_; border:1px solid _BORDER_; padding:5px 5px 0; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
