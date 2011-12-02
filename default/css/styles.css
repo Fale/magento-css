@@ -1,11 +1,11 @@
 /* Reset ================================================================================= */
 * { margin:0; padding:0; }
 
-body          { background:#fff; font:12px/1.35 Arial, Helvetica, sans-serif; color:#000; text-align:center; }
+body          { background:_BACKGROUND_; font:12px/1.35 Arial, Helvetica, sans-serif; color:_TEXT_; text-align:center; }
 
 img           { border:0; vertical-align:top; }
 
-a             { color:#05c; text-decoration:underline; }
+a             { color:_A_; text-decoration:underline; }
 a:hover       { text-decoration:none; }
 :focus        { outline:0; }
 
@@ -65,16 +65,16 @@ ul,ol         { list-style:none; }
 /* Layout ================================================================================ */
 .wrapper {}
 .page { width:1000px; margin:0 auto; padding:10px 0; text-align:left; }
-.page-print { background:#fff; padding:20px; text-align:left; }
-.page-empty { background:#fff; padding:20px; text-align:left; }
+.page-print { background:#FFFFFF; padding:20px; text-align:left; }
+.page-empty { background:_BACKGROUND_; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
 .main-container {}
 .main { margin:10px 0; }
 
 /* Base Columns */
-.col-left { float:left; width:230px; border:1px solid #ddd; padding:5px 5px 0; }
-.col-main { float:left; width:736px; border:1px solid #ddd; padding:5px; }
-.col-right { float:right; width:230px; border:1px solid #ddd; padding:5px 5px 0; }
+.col-left { float:left; width:230px; border:1px solid _BORDER_; padding:5px 5px 0; }
+.col-main { float:left; width:736px; border:1px solid _BORDER_; padding:5px; }
+.col-right { float:right; width:230px; border:1px solid _BORDER_; padding:5px 5px 0; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
@@ -107,12 +107,12 @@ ul,ol         { list-style:none; }
 
 /* Global Styles ========================================================================= */
 /* Form Elements */
-input,select,textarea,button { font:12px Arial, Helvetica, sans-serif; vertical-align:middle; color:#000; }
-input.input-text,select,textarea { background:#fff; border:1px solid #ddd; }
+input,select,textarea,button { font:12px Arial, Helvetica, sans-serif; vertical-align:middle; color:_TEXT_; }
+input.input-text,select,textarea { background:_BACKGROUND_; border:1px solid _BORDER_; }
 input.input-text,textarea { padding:2px; }
 select { padding:1px; }
 select option { padding-right:10px; }
-select.multiselect option { border-bottom:1px solid #ddd; padding:2px 5px; }
+select.multiselect option { border-bottom:1px solid _BORDER_; padding:2px 5px; }
 select.multiselect option:last-child { border-bottom:0; }
 textarea { overflow:auto; }
 input.radio { margin-right:3px; }
@@ -121,7 +121,7 @@ input.qty { width:2.5em !important; }
 button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
 button.button { overflow:visible; width:auto; border:0; padding:0; margin:0; background:transparent; cursor:pointer; }
-button.button span { float:left; height:21px; background:transparent url(../images/bkg_button.gif) 0 0 no-repeat; padding:0 0 0 8px; font:bold 12px/21px Arial, Helvetica, sans-serif; text-align:center; white-space:nowrap; color:#fff; }
+button.button span { float:left; height:21px; background:transparent url(../images/bkg_button.gif) 0 0 no-repeat; padding:0 0 0 8px; font:bold 12px/21px Arial, Helvetica, sans-serif; text-align:center; white-space:nowrap; color:_BACKGROUND_; }
 button.button span span { background-position:100% 0; padding:0 12px 0 4px; }
 button.disabled {}
 button.disabled span {}
