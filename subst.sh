@@ -9,7 +9,7 @@
 # -------------------------------------------------------------
 PATH_ROOT="${HOME}/public_html/skin/frontend/default"
 #PATH_ROOT="${HOME}/magento-css" # DEVELOP
-PATH_HOME="${HOME}/magento-css" # DEVELOP
+PATH_HOME="${HOME}/magento-css"
 PATH_DEF="${PATH_HOME}/default/css"
 
 INI="styles.ini"
@@ -29,12 +29,6 @@ function SetFileSite
 {
   PATH_OUT="${PATH_ROOT}/${SITE_NAME}/css"
   FILE_SOUT="${PATH_OUT}/${CSS}"
-#  if [[ ! -r  ${FILE_SOUT} ]]
-#  then
-#    "File Not Found: ${FILE_SOUT}"
-#    exit 2
-#  fi
-
   PATH_SINI="${PATH_HOME}/${SITE_NAME}/css"
   FILE_SINI="${PATH_SINI}/${INI}"
   if [[ ! -r  ${FILE_SINI} ]]
@@ -87,9 +81,6 @@ function Substitute
   for i in ${arr_id[*]}
   do
     sed -e s/${arr_id[$index]}/${arr_va[$index]}/g ${FILE_TMP1} > ${FILE_TMP2}
-   echo "    sed -e 's/${arr_id[$index]}/${arr_va[$index]}/g' ${FILE_TMP1} > ${FILE_TMP2}"
-#   diff ${FILE_TMP2} ${FILE_TMP1}
- 
     cp ${FILE_TMP2} ${FILE_TMP1}
     (( index = index + 1 ))
   done
