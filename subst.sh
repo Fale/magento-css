@@ -7,7 +7,7 @@
 #
 # F.Cermelli                                 snds - 2 dec 2011
 # -------------------------------------------------------------
-PATH_ROOT="${HOME}/public_html/skin/frontend/default"
+PATH_ROOT="${HOME}/public_html/skin/frontend/snds"
 #PATH_ROOT="${HOME}/magento-css" # DEVELOP
 PATH_HOME="${HOME}/magento-css"
 PATH_DEF="${PATH_HOME}/default/css"
