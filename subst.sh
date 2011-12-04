@@ -47,7 +47,7 @@ function LoopFileDef
   IFS=":"
   while read ID VAL
   do
-    INI_VAL=$(grep ${ID} ${FILE_INI})
+    INI_VAL=$(grep ${ID} ${FILE_SINI})
     if [[ $? != 0 ]]
     then
       echo "${ID}:${VAL}" >> ${FILE_TMP}
