@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/ksh
 # -------------------------------------------------------------
 # SUBS: sostituisce il pattern riportato nel file di 
 #       inizializzazione nel file di template per
@@ -10,6 +10,8 @@
 FILE_DEF="azienda.def"
 FILE_INI="azienda.ini"
 FILE_TMP="azienda.tmp"
+FILE_TMP1="template1.tmp"
+FILE_TMP2="template2.tmp"
 
 FILE_TPL="azienda.tpl"
 
@@ -23,9 +25,9 @@ function LoopFileDef
     INI_VAL=$(grep ${ID} ${FILE_INI})
     if [[ $? != 0 ]]
     then
-      echo "${ID}:${VAL}" >> ${FILE_TMP}
+      print "${ID}:${VAL}" >> ${FILE_TMP}
     else
-      echo "${INI_VAL}" >> ${FILE_TMP}
+      print "${INI_VAL}" >> ${FILE_TMP}
     fi
   done < ${FILE_DEF}
 }
@@ -48,19 +50,17 @@ function BuildArray
 # ----------------------
 function Substitute
 {
+  cp ${FILE_TPL} ${FILE_TMP1}
   (( index = 0 ))
   for i in ${arr_id[*]}
   do
-    CMD_LINE="${CMD_LINE} -e 's/${arr_id[$index]}/${arr_va[$index]}/g'"
-    if [[ $index < $index_i ]]
-    then
-      CMD_LINE="${CMD_LINE} \\"
-    fi
+    sed -e  s/${arr_id[$index]}/${arr_va[$index]}/g ${FILE_TMP1} > ${FILE_TMP2}
+    mv ${FILE_TMP2} ${FILE_TMP1}
     (( index = index + 1 ))
   done
-  echo "sed ${CMD_LINE} ${FILE_TPL} > ${FILE_OUT}"
-  sed ${CMD_LINE} ${FILE_TPL} > ${FILE_OUT}
+  mv ${FILE_TMP1} ${FILE_OUT}
 }
+
 
 # -- MAIN --------------------
 SITE_NAME=$1
