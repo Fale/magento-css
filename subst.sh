@@ -1,4 +1,4 @@
-#!/usr/bin/ksh
+#!/bin/bash
 # -------------------------------------------------------------
 # SUBS: sostituisce il pattern riportato nel file di 
 #       inizializzazione nel file di template per
@@ -56,9 +56,9 @@ function LoopFileDef
     INI_VAL=$(grep ${ID} ${FILE_INI})
     if [[ $? != 0 ]]
     then
-      print "${ID}:${VAL}" >> ${FILE_TMP}
+      echo "${ID}:${VAL}" >> ${FILE_TMP}
     else
-      print "${INI_VAL}" >> ${FILE_TMP}
+      echo "${INI_VAL}" >> ${FILE_TMP}
     fi
   done < ${FILE_DEF}
 }
@@ -97,7 +97,7 @@ function Substitute
 # -- MAIN --------------------
 if [[ $# != 1 ]]
 then
-  print "USAGE: $0 [site name]"
+  echo "USAGE: $0 [site name]"
   exit 1
 else
   SITE_NAME=$1
