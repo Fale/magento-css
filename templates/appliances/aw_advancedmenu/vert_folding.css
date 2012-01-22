@@ -1,0 +1,75 @@
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Advancedmenu
+ * @copyright  Copyright (c) 2009-2010 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+
+ .aw-vfld-mnu {
+	background:none !important;
+}
+.aw-vfld-mnu * {
+	margin-bottom: 5px;
+}
+.aw-vfld-mnu a {	
+	text-decoration:none;
+}
+.aw-vfld-mnu ul li {
+	float:none !important;
+	display:block;
+}
+.aw-vfld-mnu span {
+	/*color: #2F2F2F !important;*/
+}
+.aw-vfld-mnu li {
+	padding:3px 1px 4px 10px;
+}
+.aw-vfld-mnu ul li a {
+	/*color: #2F2F2F !important;*/
+}
+.aw-vfld-mnu li.level0, .aw-vfld-mnu li.level0 A{
+	padding-left:5px;
+}
+.aw-vfld-mnu li.level1, .aw-vfld-mnu  li.level1 A{
+	padding-left:12px !important;
+}
+.aw-vfld-mnu  li.level2, .aw-vfld-mnu  li.level2 A{
+	padding-left:19px !important;
+}
+.aw-vfld-mnu  li.level3, .aw-vfld-mnu  li.level3 A{
+	padding-left:26px !important;
+}
+.aw-vfld-mnu  li.level4, .aw-vfld-mnu  li.level4 A{
+	padding-left:23px !important;
+}
+.aw-vfld-mnu  li.level5, .aw-vfld-mnu  li.level5 A{
+	padding-left:40px !important;
+}
+.aw-vfld-mnu  li:hover, .aw-vfld-mnu  li.current{
+	/*background-color:#cccccc !important;*/
+}
+.aw-vfld-mnu  li, .aw-vfld-mnu  li a, .aw-vfld-mnu  UL.level0  {
+	/*background:none !important;*/ 
+}
+
+.aw-am-vfb {
+    float:left;
+    margin-bottom:30px;
+}
+
+.aw-am-vfb li.aw-am-level0 a, .aw-am-vfb li.aw-am-level1 a, .aw-am-vfb li.aw-am-level2 a, .aw-am-vfb li.aw-am-level3 a, .aw-am-vfb li.aw-am-level4 a {
+    color: #616161;
+}
+
+.aw-am-vfb ul li.aw-am-level1:hover, .aw-am-vfb ul li.aw-am-level2:hover, .aw-am-vfb ul li.aw-am-level3:hover, .aw-am-vfb ul li.aw-am-level4:hover {
+    background-color: #FFF;
+}

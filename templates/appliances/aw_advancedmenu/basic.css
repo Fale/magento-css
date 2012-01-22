@@ -1,0 +1,109 @@
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Advancedmenu
+ * @copyright  Copyright (c) 2009-2010 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+
+.am-ie-clear:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    font-size:0;
+    line-height:0;
+    visibility:hidden;
+}
+
+.aw-am-body {
+    position:relative;
+    top:18px;
+    left:15px;
+}	
+
+.aw-am-block {
+}
+
+.aw-am-block li a{
+
+}
+
+ul.aw-am-dropbox{
+	background-color: #0a263c;
+	border: 1px solid #a7c6dd;	
+}
+
+.aw-am-block li.active a {
+	color: #d96708;
+}
+
+.aw-am-block li.active {
+	
+}
+
+.aw-am-block li.aw-am-level1 a {
+	color: #ebbc58;
+}
+
+.aw-am-block li.aw-am-level2 a {
+	color: #ffffff;
+}
+
+.aw-am-block li ul li.aw-am-level1 a {
+	color: #ebbc58;
+}
+
+.aw-am-block li ul li.aw-am-level2 a {
+	color: #ffffff;
+}
+
+.aw-am-block li.current a{
+	color: #d96708 !important;
+}
+
+.aw-am-dropbox li a{
+	color: #a7c6dd;
+}
+
+.aw-am-block ul li.aw-am-level1:hover, .aw-am-block ul li.aw-am-level2:hover , .aw-am-block ul li.aw-am-level3:hover, .aw-am-block ul li.aw-am-level4:hover{
+	background-color: #2a4862;	
+}
+
+.aw-am-block ul li:hover a{
+
+}
+
+.aw-am-block ul li{
+	
+}
+
+ul.aw-am-level1{
+	
+}
+
+li.aw-am-level0 a{	
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #a7c6dd;
+}
+
+li.aw-am-level1 a{
+	font-weight: bold !important;
+	font-size: 1em !important;
+}
+
+li.aw-am-level2 a{
+	font-weight: normal !important;
+	font-size: 1em !important;
+}
+
+

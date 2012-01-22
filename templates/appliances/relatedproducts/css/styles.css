@@ -1,0 +1,11 @@
+.aw-wbtab-content .product-images {
+    width: 80px;
+    float:left;
+}
+.aw-wbtab-content .product-details {
+    margin-left: 80px;
+    padding-bottom: 10px;
+}
+.aw-wbtab-content .product-images .checkbox-container {
+    padding-right: 5px;
+}
