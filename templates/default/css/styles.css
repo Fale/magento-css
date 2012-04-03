@@ -73,7 +73,7 @@ ul,ol         { list-style:none; }
 
 /* Base Columns */
 .col-left { float:left; width:_W-LEFT_; border:1px solid _BORDER_; padding:5px 5px 0; }
-.col-main { float:left; width:_W-MAIN_; border:1px solid _BORDER_; padding:5px; background: _BACKGROUND-TWO_; }
+.col-main { float:left; width:_W-MAIN_; border:1px solid _BORDER_; padding:5px; background: _BACKGROUND-THREE_; }
 .col-right { float:right; width:_W-RIGHT_; border:1px solid _BORDER_; padding:5px 5px 0; }
 
 /* 1 Column Layout */
@@ -281,7 +281,7 @@ p.required { font-size:10px; text-align:right; color:#f00; }
 .sub-title { clear:both; }
 
 /* Pager */
-.pager { border:1px solid _BORDER_; padding:5px; margin:5px 0; text-align:center; }
+.pager { border:1px solid _BORDER_; padding:5px; margin:5px 0; text-align:center; background: _BACKGROUND-TWO_;}
 .pager .amount { float:left; }
 .pager .limiter { float:right; }
 .pager .pages { margin:0 135px; }
@@ -290,16 +290,18 @@ p.required { font-size:10px; text-align:right; color:#f00; }
 .pager .pages .current {}
 
 /* Sorter */
-.sorter { border:1px solid _BORDER_; padding:5px; margin:5px 0; }
+.sorter { border:1px solid _BORDER_; padding:5px; margin:5px 0; background: _BACKGROUND-TWO_;}
 .sorter .view-mode { float:left; }
 .sorter .sort-by { float:right; }
 .sorter .link-feed {}
 
 /* Toolbar */
 .toolbar {}
-.toolbar .pager {}
+.toolbar .pager {display: none;}
 .toolbar .sorter {}
 .toolbar-bottom {}
+.toolbar-bottom .toolbar .pager {display: inherit;}
+.toolbar-bottom .toolbar .sorter {display: none;}
 
 /* Data Table */
 .data-table { width:100%; }
@@ -469,12 +471,12 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Sidebar =============================================================================== */
 .block { border:1px solid _BORDER_; margin:0 0 10px; }
-.block .block-title { border-bottom:1px solid _BORDER_; padding:3px 10px; }
+.block .block-title { border-bottom:1px solid _BORDER_; padding:3px 10px; background: _BACKGROUND-TWO_;}
 .block .block-title strong { font-size:14px; font-weight:bold; }
 .block .block-title strong span {}
 .block .block-title a { text-decoration:none !important; }
 .block .block-subtitle { font-size:13px; font-weight:bold; }
-.block .block-content { padding:10px; }
+.block .block-content { padding:10px; background: _BACKGROUND-THREE_; }
 .block .block-content li.item { padding:5px 0; }
 .block .btn-remove,
 .block .btn-edit { float:right;}
@@ -483,7 +485,7 @@ tr.summary-details-excluded { font-style:italic; }
 .block .empty {}
 
 .block li.odd {}
-.block li.even { background-color:#f6f6f6; }
+.block li.even { }
 
 /* Mini Products List */
 .mini-products-list li { padding:5px 0; }
@@ -506,6 +508,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Block: Cart */
 .block-cart {}
+.block-cart .block-title {background: _CORE-COLOR_; !important}
 .block-cart .summary {}
 .block-cart .amount {}
 .block-cart .subtotal { text-align:center; }
@@ -570,7 +573,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Category Page ========================================================================= */
-.category-title { border:0; margin:0 0 7px; }
+.category-title { border:0; margin:0 0 7px; display:none;}
 .category-image { width:100%; overflow:hidden; margin:0 0 10px; text-align:center; }
 .category-image img {}
 .category-description { margin:0 0 10px; }
@@ -586,6 +589,7 @@ tr.summary-details-excluded { font-style:italic; }
 .products-grid .price-box { margin:5px 0; }
 .products-grid .availability { line-height:21px; }
 .products-grid .actions { position:absolute; bottom:12px; }
+.products-grid .actions .btn-cart { background: _CORE-COLOR_; }
 .col2-left-layout .products-grid,
 .col2-right-layout .products-grid { width:632px; margin:0 auto; }
 .col1-layout .products-grid { width:790px; margin:0 auto; }
@@ -735,8 +739,8 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Add to Cart */
 .add-to-cart label { float:left; margin-right:5px; }
-.add-to-cart .qty { float:left; }
-.add-to-cart button.button { float:left; margin-left:5px; }
+.add-to-cart .qty { float:left; border: 1px solid _CORE-COLOR_;}
+.add-to-cart button.button { float:left; margin-left:5px; background: _CORE-COLOR_;}
 .add-to-cart .paypal-logo { clear:left; text-align:right; }
 .add-to-cart .paypal-logo .paypal-or { clear:both; display:block; margin:5px 60px 5px 0; }
 .product-view .add-to-cart .paypal-logo { margin:0; }
