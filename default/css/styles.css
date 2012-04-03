@@ -73,7 +73,7 @@ ul,ol         { list-style:none; }
 
 /* Base Columns */
 .col-left { float:left; width:_W-LEFT_; border:1px solid _BORDER_; padding:5px 5px 0; }
-.col-main { float:left; width:_W-MAIN_; border:1px solid _BORDER_; padding:5px; }
+.col-main { float:left; width:_W-MAIN_; border:1px solid _BORDER_; padding:5px; background: _BACKGROUND-TWO_; }
 .col-right { float:right; width:_W-RIGHT_; border:1px solid _BORDER_; padding:5px 5px 0; }
 
 /* 1 Column Layout */
@@ -423,7 +423,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header-container .top-container { clear:both; text-align:right; }
 
 /********** < Navigation */
-.nav-container { background: _BACKGROUND-TWO_}
+.nav-container { background: _BACKGROUND-TWO_;}
 #nav { border:1px solid _BORDER_; padding:5px 0; margin:10px 0; font-size:13px; }
 
 /* All Levels */
