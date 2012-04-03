@@ -1,0 +1,138 @@
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Advancedmenu
+ * @copyright  Copyright (c) 2009-2010 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+
+.aw-hstat-header-nav-container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    left:0px;
+    top:0px;
+    float:left;
+}
+
+.aw-hstat-header-nav {
+	width:950px;
+	margin: 0 auto;
+	padding: 0px !important;
+}
+
+ /************** ALL LEVELS  *************/ 
+/* Style consistent throughout all nav levels */
+.aw-hstat-mnu{ 
+	padding:0px; 
+}
+.aw-hstat-mnu ul{ 
+	position:static !important; 
+	float:left !important; 
+	width:15em !important;
+}
+.aw-hstat-mnu li{ 
+	position:relative; 
+	text-align:left;  
+	float:left !important; 
+	width:15em !important; 
+}
+.aw-hstat-mnu ul li, .aw-hstat-mnu ul li.last{ 
+	
+}
+.aw-hstat-mnu ul li.last{ 
+	padding-bottom:0; 
+}
+.aw-hstat-mnu ul li, .aw-hstat-mnu ul li.active{ 
+	margin:0; 
+	padding-bottom:1px; 
+}
+.aw-hstat-mnu li.over{ 
+	
+}
+.aw-hstat-mnu a{ 
+	padding:5px 12px 6px 8px;  
+}
+.aw-hstat-mnu li a, .aw-hstat-mnu li.over a, .aw-hstat-mnu a:hover{ 
+	display:block; 
+	text-decoration:none; 
+}
+.aw-hstat-mnu ul a, .aw-hstat-mnu ul a:hover{ 
+	float:none; 
+	padding:0; 
+}
+.aw-hstat-mnu ul span, .aw-hstat-mnu ul li.last li span{ 
+	padding:3px 15px 4px 15px; 
+}
+.aw-hstat-mnu span{ 
+	display:block; 
+	cursor:pointer; 
+	white-space:nowrap; 
+}
+.aw-hstat-mnu li ul span{ 
+	white-space:normal; 
+}
+.aw-hstat-mnu li.current span{ 
+	font-weight:bold; 
+}
+.aw-hstat-mnu li.current li span{ 
+	font-weight:normal; 
+}
+/************ 0 LEVEL  ***************/
+.aw-hstat-mnu ul.level0{ 
+	clear:left; 
+}
+/************ 1ST LEVEL ************/
+
+
+
+/************ 2ND LEVEL ************/
+.aw-hstat-mnu ul li.level1 ul{ 
+	clear:both; 
+}
+.aw-hstat-mnu li.level2 a{ 
+    margin-left:20px !important;
+}
+/************ 3RD+ LEVEL ************/
+.aw-hstat-mnu li.level3 A{ 
+    margin-left:40px !important;
+}
+.aw-hstat-mnu li.level4 A{ 
+    margin-left:60px !important;
+}
+.aw-hstat-mnu li.level5 A{ 
+    margin-left:80px !important;
+}
+
+.aw-hstat-header-nav #nav {
+    margin:0px;
+}
+
+.aw-hstat-header-nav #nav li.over {
+    background:none;
+    border:0px;
+}
+
+.aw-hstat-header-nav #nav ul li.parent {
+    background:none;
+}
+
+.aw-hstat-header-nav #nav li.over a {
+    padding-left:20px;
+}
+
+.aw-hstat-header-nav #nav li.active {
+    background-color:transparent;
+}
+
+.aw-hstat-header-nav #nav li.active a span {
+    background-color:#89D4FF;
+}

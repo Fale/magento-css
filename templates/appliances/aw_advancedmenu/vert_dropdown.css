@@ -1,0 +1,32 @@
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Advancedmenu
+ * @copyright  Copyright (c) 2009-2010 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+ .aw-vdd-nav {
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.aw-vdd-nav option.current {
+	font-weight:bold;
+}
+.aw-vdd-nav select.active {
+	font-weight:bold;
+}
+
+.aw-am-vdb {
+    float:left;
+    margin-bottom: 30px;
+}

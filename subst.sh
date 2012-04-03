@@ -10,7 +10,7 @@
 PATH_ROOT="${HOME}/public_html/skin/frontend/snds"
 #PATH_ROOT="${HOME}/magento-css" # DEVELOP
 PATH_HOME="${HOME}/magento-css"
-PATH_DEF="${PATH_HOME}/default/css"
+PATH_DEF="${PATH_HOME}/templates/default/css"
 
 INI="styles.ini"
 CSS="styles.css"

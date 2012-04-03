@@ -1,0 +1,196 @@
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ *
+ * @category   AW
+ * @package    AW_Advancedmenu
+ * @copyright  Copyright (c) 2009-2010 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/LICENSE-M1.txt
+ */
+
+.aw-hapln-header-nav-container {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 522px;
+        float:left;
+}
+
+.aw-hapln-header-nav {
+	width:950px;
+	height: 30px !important;
+	margin: 0 auto;
+	padding: 0px !important;
+}
+ 
+.aw-hapln-mnu {
+	padding:0px; 
+}
+.aw-hapln-mnu li.current span{
+
+}
+.aw-hapln-mnu li.current li span{
+	font-weight:normal;
+}
+
+/************** ALL LEVELS  *************/ /* Style consistent throughout all nav levels */
+.aw-hapln-mnu li { 
+	position:relative; 
+	text-align:left; 
+}
+.aw-hapln-mnu li.over { 
+	z-index:999; 
+}
+.aw-hapln-mnu a, .aw-hapln-mnu a:hover { 
+	display:block; 
+	text-decoration:none; 
+}
+.aw-hapln-mnu span { 
+	display:block; 
+	cursor:pointer; 
+	white-space:nowrap; 
+}
+.aw-hapln-mnu li ul span {
+	white-space:normal; 
+}
+
+/************ 0 LEVEL  ***************/
+.aw-hapln-mnu li { 
+	float:left; 
+}
+.aw-hapln-mnu li.active a { 
+
+}
+.aw-hapln-mnu a { 
+	float:left; 
+	padding:5px 12px 6px 8px; 
+}
+.aw-hapln-mnu li.over a, .aw-hapln-mnu a:hover { 
+
+}
+
+/************ 1ST LEVEL ************/
+.aw-hapln-mnu ul li, .aw-hapln-mnu ul li.active { 
+	float:none; 
+	margin:0; 
+}
+
+.aw-hapln-mnu ul li.last { 
+	padding-bottom:0; 
+}
+
+.aw-hapln-mnu ul a, .aw-hapln-mnu ul a:hover { 
+	float:none; 
+	padding:0; 
+
+}
+.aw-hapln-mnu ul li a { 
+	font-weight:normal !important; 
+}
+
+/************ 2ND LEVEL ************/
+.aw-hapln-mnu ul { 
+	position:absolute; 
+	width:12em; 
+	top:25px; 
+	left:-10000px; 
+}
+
+/* Show menu */
+.aw-hapln-mnu li.over > ul { 
+	left:0; 
+}
+.aw-hapln-mnu li.over > ul li.over > ul { 
+	left:100px; 
+}
+.aw-hapln-mnu li.over ul ul { 
+	left:-10000px; 
+}
+.aw-hapln-mnu ul li a { 
+
+}
+.aw-hapln-mnu ul li a:hover { 
+ 
+}
+.aw-hapln-mnu ul li a, .aw-hapln-mnu ul li a:hover { 
+
+}
+.aw-hapln-mnu ul span, .aw-hapln-mnu ul li.last li span { 
+	padding:3px 15px 4px 15px;
+}
+/************ 3RD+ LEVEL ************/
+.aw-hapln-mnu ul ul { 
+	top:5px; 
+}
+.aw-hapln-mnu UL.level0 {
+	width:36em !important;
+
+}
+.aw-hapln-mnu UL.level1, .aw-hapln-mnu UL.level2, .aw-hapln-mnu UL.level3,  .aw-hapln-mnu UL.level4,  .aw-hapln-mnu UL.level5 {
+	border:0px none !important;
+	width:12em !important;
+}
+ .aw-hapln-mnu UL LI.column {
+	float:left !important;
+	width:12em;
+}
+
+ .aw-hapln-mnu UL LI.level1 {
+
+}
+ .aw-hapln-mnu UL LI,  .aw-hapln-mnu UL LI.last {
+	border:0px none !important;
+}
+
+ .aw-hapln-mnu UL LI.column UL {
+	float:left !important;
+	clear:both;
+	position:static !important;
+}
+
+ .aw-hapln-mnu UL LI.level1 UL {
+	float:left !important;
+	clear:both;
+	position:static !important;
+}
+.aw-hapln-mnu li.level2 A {
+    margin-left:20px !important;
+}
+.aw-hapln-mnu li.level3 A {
+    margin-left:40px !important;
+}
+.aw-hapln-mnu li.level4 A {
+    margin-left:60px !important;
+}
+.aw-hapln-mnu li.level5 A {
+    margin-left:80px !important;
+}
+
+.aw-hapln-header-nav #nav {
+    margin:0px;
+}
+
+.aw-hapln-header-nav #nav li.aw-am-level0 a {
+    font-weight: normal;
+}
+
+.aw-hapln-header-nav #nav ul li.parent {
+    background:none;
+}
+
+.aw-hapln-header-nav #nav ul li, .aw-hapln-header-nav #nav ul li.active, .aw-hapln-header-nav #nav ul li.over, .aw-hapln-header-nav #nav a span {
+    height:auto !important;
+}
+
+.aw-hapln-header-nav #nav a {
+    height: auto;
+}
+
+.aw-hapln-header-nav #nav ul {
+    margin-top:-2px;
+}
