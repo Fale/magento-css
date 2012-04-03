@@ -423,7 +423,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header-container .top-container { clear:both; text-align:right; }
 
 /********** < Navigation */
-.nav-container {}
+.nav-container { background: _BACKGROUND-TWO_}
 #nav { border:1px solid _BORDER_; padding:5px 0; margin:10px 0; font-size:13px; }
 
 /* All Levels */
