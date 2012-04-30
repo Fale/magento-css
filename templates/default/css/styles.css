@@ -257,7 +257,7 @@ p.required { font-size:10px; text-align:right; color:#f00; }
 .error-msg { border-color:#f16048; background-color:#faebe7; background-image:url(../images/i_msg-error.gif); color:#df280a; }
 .success-msg { border-color:#446423; background-color:#eff5ea; background-image:url(../images/i_msg-success.gif); color:#3d6611; }
 .note-msg,
-.notice-msg { border-color:#fcd344; background-color:#fafaec; background-image:url(../images/i_msg-note.gif); color:#3d6611; }
+.notice-msg { border-color:#fcd344; background-color:#fafaec; background-image:url(../images/i_msg-note.gif); color:_TEXT_; }
 
 /* BreadCrumbs */
 .breadcrumbs { padding:10px; margin:0 0 10px; border:1px solid _BORDER_; }
@@ -412,7 +412,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .logo { float:left; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; padding:0; }
-.header .welcome-msg { font-weight:bold; text-align:right; }
+.header .welcome-msg { font-weight:bold; text-align:right; display:none; }
 .header .welcome-msg a {}
 .header .links { float:right; }
 .header .form-search { text-align:right; }
@@ -439,7 +439,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* 1st Level */
 #nav li { float:left; }
-#nav li a { float:left; padding:5px 10px; font-weight:bold; color:#888; }
+#nav li a { float:left; padding:5px 10px; font-weight:bold; color:_NAV-INACTIVE-COLOR_; }
 #nav li a:hover { color:_NAV-ACTIVE-COLOR_; }
 #nav li.over a,
 #nav li.active a { color:_NAV-ACTIVE-COLOR_; }
